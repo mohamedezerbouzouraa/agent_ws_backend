@@ -1,4 +1,3 @@
-
 import os
 from functools import lru_cache
 
@@ -7,7 +6,6 @@ try:
     load_dotenv()
 except ImportError:
     pass
-
 #lhne t7ot les api keys 
 class Settings:
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
