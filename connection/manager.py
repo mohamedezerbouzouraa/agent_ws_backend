@@ -10,8 +10,7 @@ from connection.events import (
     ToolCallStartEvent,
     ToolCallEndEvent,
     RunEndEvent,
-    ErrorEvent,
-)
+    ErrorEvent,)
 class ConnectionManager:
     def __init__(self):
         self._active_tasks: dict[str, asyncio.Task] = {}
