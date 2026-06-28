@@ -1,8 +1,3 @@
-"""
-Tools available to the agent.
-Replace/extend these with whatever your use case needs
-(RAG retriever, DB queries, external APIs, etc).
-"""
 from langchain_core.tools import tool
 import asyncio
 
