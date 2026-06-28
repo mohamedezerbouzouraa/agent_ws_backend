@@ -1,7 +1,6 @@
 from typing import Any, Literal, Optional
 from pydantic import BaseModel
 
-
 class AgentEvent(BaseModel):
     type: Literal[
         "run_start",       
