@@ -5,7 +5,6 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 
 from connection.manager import manager
-
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("agent_ws_backend")
 app = FastAPI(title="Agent WebSocket Backend")
