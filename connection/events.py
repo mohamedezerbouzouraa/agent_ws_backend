@@ -12,8 +12,6 @@ class AgentEvent(BaseModel):
         "error",           
     ]
     data: dict[str, Any] = {}
-
-
 class RunStartEvent(AgentEvent):
     type: Literal["run_start"] = "run_start"
 
