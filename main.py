@@ -11,11 +11,12 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_methods=["*"],
-    allow_headers=["*"],
-)
+    allow_headers=["*"],)
+
 @app.get("/health")
 async def health():
     return {"status": "ok"}
+    
 @app.websocket("/ws/agent")
 async def agent_ws(websocket: WebSocket):
     await websocket.accept()
