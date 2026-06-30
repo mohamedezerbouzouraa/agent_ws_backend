@@ -1,7 +1,6 @@
 from langchain_core.tools import tool
 import asyncio
 
-
 @tool
 async def get_weather(city: str) -> str:
     """Get the current weather for a city. Use this when the user asks about weather."""
@@ -12,7 +11,6 @@ async def get_weather(city: str) -> str:
         "new york": "22°C, light rain",
     }
     return fake_data.get(city.lower(), f"No data found for {city}")
-
 
 @tool
 async def calculate(expression: str) -> str:
