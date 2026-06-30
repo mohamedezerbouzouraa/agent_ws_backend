@@ -3,7 +3,6 @@ import asyncio
 
 @tool
 async def get_weather(city: str) -> str:
-    """Get the current weather for a city. Use this when the user asks about weather."""
     await asyncio.sleep(1.5)
     fake_data = {
         "paris": "18°C, partly cloudy",
