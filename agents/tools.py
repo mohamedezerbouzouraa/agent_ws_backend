@@ -9,6 +9,7 @@ async def get_weather(city: str) -> str:
         "tunis": "29°C, sunny",
         "new york": "22°C, light rain",}
     return fake_data.get(city.lower(), f"No data found for {city}")
+    
 
 @tool
 async def calculate(expression: str) -> str:
