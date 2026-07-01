@@ -11,6 +11,7 @@ from connection.events import (
     ToolCallEndEvent,
     RunEndEvent,
     ErrorEvent,)
+
 class ConnectionManager:
     def __init__(self):
         self._active_tasks: dict[str, asyncio.Task] = {}
