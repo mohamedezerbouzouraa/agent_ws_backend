@@ -8,8 +8,7 @@ class AgentEvent(BaseModel):
         "tool_call_start", 
         "tool_call_end",   
         "run_end",        
-        "error",           
-    ]
+        "error",]
     data: dict[str, Any] = {}
 class RunStartEvent(AgentEvent):
     type: Literal["run_start"] = "run_start"
