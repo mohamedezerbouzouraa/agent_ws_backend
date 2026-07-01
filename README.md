@@ -2,7 +2,7 @@
 
 A FastAPI backend that runs a LangGraph agent per WebSocket connection,
 streaming live updates (LLM tokens, tool calls, tool results, final answer)
-to the client in real time — instead of blocking until the whole response
+to the client in real time instead of blocking until the whole response
 is ready.
 ## Setup
 
