@@ -7,7 +7,6 @@ from agents.state import AgentState
 from agents.tools import TOOLS
 from config import get_settings
 settings = get_settings()
-
 def _build_llm():
     if settings.MODEL_PROVIDER == "anthropic":
         from langchain_anthropic import ChatAnthropic
