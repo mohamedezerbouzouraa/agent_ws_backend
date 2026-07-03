@@ -13,7 +13,6 @@ class AgentEvent(BaseModel):
 class RunStartEvent(AgentEvent):
     type: Literal["run_start"] = "run_start"
 
-
 class LLMTokenEvent(AgentEvent):
     type: Literal["llm_token"] = "llm_token"
 
