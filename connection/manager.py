@@ -10,11 +10,11 @@ from connection.events import (
     ToolCallStartEvent,
     ToolCallEndEvent,
     RunEndEvent,
-    ErrorEvent,)
+    ErrorEvent,
+)
 class ConnectionManager:
     def __init__(self):
         self._active_tasks: dict[str, asyncio.Task] = {}
-
     def new_session_id(self) -> str:
         return str(uuid.uuid4())
 
@@ -29,7 +29,6 @@ class ConnectionManager:
             except asyncio.CancelledError:
                 pass
         self._active_tasks.pop(session_id, None)
-
     async def run_agent(self, websocket: WebSocket, session_id: str, user_message: str):
         """
         Stream a LangGraph agent run over the websocket as a series of JSON events.
