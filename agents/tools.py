@@ -10,7 +10,6 @@ async def get_weather(city: str) -> str:
         "new york": "22°C, light rain",}
     return fake_data.get(city.lower(), f"No data found for {city}")
     
-
 @tool
 async def calculate(expression: str) -> str:
     """Evaluate a basic math expression, e.g. '12 * (4 + 1)'. Use this for any arithmetic."""
